@@ -8,6 +8,7 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $name = 'Kévin';
+        return view('welcome', ['name' => $name]);
     }
 }
