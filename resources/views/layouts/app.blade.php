@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title')</title>
+    <title>@yield('title', 'Mon site Laravel')</title>
 </head>
 
 <body>
