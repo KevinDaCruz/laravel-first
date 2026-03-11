@@ -7,9 +7,8 @@
 <p>Contenu principal de la page d'accueil.</p>
 
 @foreach ($articles as $article)
-    @if ($loop->last)
-        @break
-    @endif
-    <x-article :title="$article['title']" :description="$article['description']" />
+    <a href="{{ route('article.details', ['id' => $article->id]) }}">
+        <x-article :title="$article->title" :description="$article->description" />
+    </a>
 @endforeach
 @endsection
